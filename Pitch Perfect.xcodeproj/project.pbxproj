@@ -16,6 +16,7 @@
 		AF1357251C0DBC350012B006 /* Pitch_PerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1357241C0DBC350012B006 /* Pitch_PerfectUITests.swift */; };
 		AF722AE01C0ED23900FE6150 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF722ADF1C0ED23900FE6150 /* PlaySoundsViewController.swift */; };
 		AF722AE21C0ED71E00FE6150 /* wana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF722AE11C0ED71E00FE6150 /* wana.mp3 */; };
+		AF722AE81C0F347B00FE6150 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF722AE71C0F347B00FE6150 /* RecordedAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AF1357261C0DBC350012B006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF722ADF1C0ED23900FE6150 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		AF722AE11C0ED71E00FE6150 /* wana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wana.mp3; sourceTree = "<group>"; };
+		AF722AE71C0F347B00FE6150 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				AF1357041C0DBC350012B006 /* AppDelegate.swift */,
 				AF1357061C0DBC350012B006 /* RecordSoundsViewController.swift */,
+				AF722AE71C0F347B00FE6150 /* RecordedAudio.swift */,
 				AF722ADF1C0ED23900FE6150 /* PlaySoundsViewController.swift */,
 				AF1357081C0DBC350012B006 /* Main.storyboard */,
 				AF722AE11C0ED71E00FE6150 /* wana.mp3 */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF722AE81C0F347B00FE6150 /* RecordedAudio.swift in Sources */,
 				AF1357071C0DBC350012B006 /* RecordSoundsViewController.swift in Sources */,
 				AF722AE01C0ED23900FE6150 /* PlaySoundsViewController.swift in Sources */,
 				AF1357051C0DBC350012B006 /* AppDelegate.swift in Sources */,

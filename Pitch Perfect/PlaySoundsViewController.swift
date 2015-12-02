@@ -12,19 +12,23 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer!
+    var receivedAudio:RecordedAudio!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if let filePath = NSBundle.mainBundle().pathForResource("wana", ofType: "mp3"){
-            let filePathUrl = NSURL.fileURLWithPath(filePath)
-            
-            audioPlayer = try! AVAudioPlayer(contentsOfURL: filePathUrl)
-            audioPlayer.enableRate = true
-            
-        }else {
-            print("the filePath is empty")
-        }
+//        if let filePath = NSBundle.mainBundle().pathForResource("wana", ofType: "mp3"){
+//            let filePathUrl = NSURL.fileURLWithPath(filePath)
+//            
+//            audioPlayer = try! AVAudioPlayer(contentsOfURL: filePathUrl)
+//            audioPlayer.enableRate = true
+//            
+//        }else {
+//            print("the filePath is empty")
+//        }
+        
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
+        audioPlayer.enableRate = true
     }
     
     override func didReceiveMemoryWarning() {
