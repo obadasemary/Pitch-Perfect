@@ -260,25 +260,25 @@
                                     <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlI-jo-k2l"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tap to Record!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNr-dY-c50">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNr-dY-c50">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="enJ-xg-mAo"/>
-                                    <constraint firstAttribute="width" constant="98" id="ku9-Rm-h8J"/>
+                                    <constraint firstAttribute="height" constant="18" id="e21-F8-kDc"/>
+                                    <constraint firstAttribute="width" constant="100" id="xpa-Lv-ajY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="enJ-xg-mAo"/>
-                                        <exclude reference="ku9-Rm-h8J"/>
+                                        <exclude reference="e21-F8-kDc"/>
+                                        <exclude reference="xpa-Lv-ajY"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="enJ-xg-mAo"/>
-                                        <include reference="ku9-Rm-h8J"/>
+                                        <include reference="e21-F8-kDc"/>
+                                        <include reference="xpa-Lv-ajY"/>
                                     </mask>
                                 </variation>
                             </label>
