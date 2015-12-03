@@ -21,7 +21,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,18 +33,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func recordAudio(sender: UIButton) {
-        print("recordAudio")
         recordReady.hidden = true
         recordingInProgress.hidden = false
         stopButton.hidden = false
         recordButton.enabled = false
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
-        
-//        let currentDateTime = NSDate()
-//        let formatter = NSDateFormatter()
-//        formatter.dateFormat = "ddMMyyyy-HHmmss"
-//        let recordingName = formatter.stringFromDate(currentDateTime)+".wav"
         
         let recordingName = "my_audio.wav"
         let pathArray = [dirPath, recordingName]
@@ -85,7 +78,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func stopAudio(sender: UIButton) {
-        print("stopAudio")
         recordingInProgress.hidden = true
         recordReady.hidden = false
         recordButton.enabled = true
