@@ -25,7 +25,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -64,8 +63,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }else {
             print("Recording was not successful")
-            recordButton.enabled = true
-            stopButton.hidden = true
+            prepareButtons()
         }
     }
     
@@ -76,11 +74,15 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             playSoundsVC.receivedAudio = data
         }
     }
-
-    @IBAction func stopAudio(sender: UIButton) {
+    
+    func prepareButtons(){
         recordingInProgress.hidden = true
         recordReady.hidden = false
         recordButton.enabled = true
+    }
+
+    @IBAction func stopAudio(sender: UIButton) {
+        prepareButtons()
         
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
