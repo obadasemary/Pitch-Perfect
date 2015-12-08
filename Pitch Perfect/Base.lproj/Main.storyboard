@@ -157,16 +157,16 @@
                                 <exclude reference="Dfm-IW-RsR"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="HnR-gu-ucp"/>
-                                <exclude reference="qsp-jB-gmB"/>
-                                <exclude reference="QVY-yM-k0j"/>
-                                <exclude reference="sAC-sp-qly"/>
                                 <exclude reference="8dI-p5-94y"/>
                                 <exclude reference="AsP-8x-sgn"/>
-                                <exclude reference="daf-9X-kRi"/>
-                                <exclude reference="xfx-jk-sI0"/>
                                 <exclude reference="Ejq-ct-KWi"/>
                                 <exclude reference="jAg-FW-H9o"/>
+                                <exclude reference="QVY-yM-k0j"/>
+                                <exclude reference="sAC-sp-qly"/>
+                                <exclude reference="daf-9X-kRi"/>
+                                <exclude reference="xfx-jk-sI0"/>
+                                <exclude reference="qsp-jB-gmB"/>
+                                <exclude reference="HnR-gu-ucp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -178,16 +178,16 @@
                                 <include reference="Dfm-IW-RsR"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="HnR-gu-ucp"/>
-                                <include reference="qsp-jB-gmB"/>
-                                <include reference="QVY-yM-k0j"/>
-                                <include reference="sAC-sp-qly"/>
                                 <include reference="8dI-p5-94y"/>
                                 <include reference="AsP-8x-sgn"/>
-                                <include reference="daf-9X-kRi"/>
-                                <include reference="xfx-jk-sI0"/>
                                 <include reference="Ejq-ct-KWi"/>
                                 <include reference="jAg-FW-H9o"/>
+                                <include reference="QVY-yM-k0j"/>
+                                <include reference="sAC-sp-qly"/>
+                                <include reference="daf-9X-kRi"/>
+                                <include reference="xfx-jk-sI0"/>
+                                <include reference="qsp-jB-gmB"/>
+                                <include reference="HnR-gu-ucp"/>
                             </mask>
                         </variation>
                     </view>
