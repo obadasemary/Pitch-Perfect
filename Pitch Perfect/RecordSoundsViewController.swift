@@ -22,28 +22,39 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(animated: Bool) {
         stopButton.hidden = true
     }
+    
+    override func viewDidLoad() {
+        
+        if NSFileManager.defaultManager().fileExistsAtPath(audioFileURL().path!) {
+            print("The file already exists !")
+        }
+    }
 
     @IBAction func recordAudio(sender: UIButton) {
+        
         recordReady.hidden = true
         recordingInProgress.hidden = false
         stopButton.hidden = false
         recordButton.enabled = false
         
-        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
-        
-        let recordingName = "my_audio.wav"
-        let pathArray = [dirPath, recordingName]
-        let filePath = NSURL.fileURLWithPathComponents(pathArray)
-        print(filePath)
-        
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         
-        try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+        try! audioRecorder = AVAudioRecorder(URL: audioFileURL(), settings: [:])
         audioRecorder.delegate = self
         audioRecorder.meteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
+    }
+    
+    func audioFileURL() -> NSURL {
+        
+        let filename = "my_audio.wav"
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let pathArray = [dirPath, filename]
+        let fileURL = NSURL.fileURLWithPathComponents(pathArray)!
+        
+        return fileURL
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
